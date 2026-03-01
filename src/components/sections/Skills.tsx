@@ -11,7 +11,7 @@ export default function Skills() {
 
   const downloadCV = () => {
     const link = document.createElement('a')
-    link.href = '/cv/CV-EmmaGrave.pdf'
+    link.href = 'cv/CV-EmmaGrave.pdf'
     link.download = 'CV-EmmaGrave.pdf'
     link.click()
   }
@@ -38,7 +38,7 @@ export default function Skills() {
       {/* CV Section */}
       <div className="max-w-xs mx-auto mt-16 text-center">
         <Image
-            src="/images/cv.webp"
+            src="images/cv.webp"
             alt="Aperçu CV"
             width={200}
             height={280}
