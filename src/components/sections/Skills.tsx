@@ -47,6 +47,7 @@ export default function Skills() {
                 width={400}
                 height={550}
                 className="w-full"
+                quality={75}
             />
           </div>
         </div>

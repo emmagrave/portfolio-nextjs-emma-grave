@@ -62,6 +62,7 @@ export default function Projects() {
                       alt={project.title}
                       fill
                       className="object-cover !relative"
+                      quality={75}
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">
