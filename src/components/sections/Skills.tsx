@@ -9,8 +9,8 @@ export default function Skills() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
   const [modalOpen, setModalOpen] = useState(false)
 
-  const downloadCV = (lang: 'fr' | 'en') => {
-    const fileName = lang === 'fr' ? 'CV-EmmaGrave.pdf' : 'CV-EmmaGrave-EN.pdf'
+  const downloadCV = () => {
+    const fileName = 'CV-EmmaGrave.pdf'
     const link = document.createElement('a')
     link.href = `/cv/${fileName}`
     link.download = fileName
@@ -38,63 +38,23 @@ export default function Skills() {
       </div>
 
       {/* CV Section */}
-      <div className="max-w-xl mx-auto mt-16 text-center">
-        <div className="w-full max-w-sm mx-auto mb-8 rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300">
-          <div className="aspect-[4/5.5] bg-white flex items-center justify-center">
-            <Image
-                src="images/cv.webp"
-                alt="Aperçu CV"
-                width={400}
-                height={550}
-                className="w-full"
-                quality={75}
-            />
-          </div>
-        </div>
+      <div className="max-w-xs mx-auto mt-16 text-center">
+        <Image
+            src="/images/cv.webp"
+            alt="Aperçu CV"
+            width={200}
+            height={280}
+            className="rounded-lg shadow-lg mb-6 mx-auto grayscale hover:grayscale-0 transition-all"
+            loading="lazy"
+            quality={60}
+        />
         <button
-          onClick={() => setModalOpen(true)}
-          className="inline-flex items-center gap-4 px-9 py-4 bg-accent text-white rounded-full text-lg hover:bg-dark hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+            onClick={downloadCV}
+            className="w-full py-3 bg-dark text-white rounded-lg hover:bg-accent transition-colors"
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
-          </svg>
-          Télécharger mon CV
+          Télécharger le CV (PDF)
         </button>
       </div>
-
-      {/* Modal */}
-      {modalOpen && (
-        <div
-          className="fixed inset-0 bg-black/75 backdrop-blur-xl z-[2000] flex items-center justify-center p-6 top-40"
-          onClick={() => setModalOpen(false)}
-        >
-          <div
-            className="bg-white p-11 rounded-2xl max-w-md w-full text-center animate-in fade-in zoom-in duration-300"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-3xl mb-8">Télécharger</h3>
-            <div className="flex flex-col gap-4">
-              <button
-                  onClick={() => downloadCV('fr')}
-                  className="py-4 px-7 bg-accent text-white rounded-full text-lg hover:bg-dark hover:-translate-y-1 transition-all">
-                CV en Français
-              </button>
-              <button
-                onClick={() => setModalOpen(false)}
-                className="py-4 px-7 bg-transparent border-2 border-dark text-dark rounded-full text-lg hover:bg-dark hover:text-white transition-all"
-              >
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   )
 }
