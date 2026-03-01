@@ -10,12 +10,10 @@ export default function Skills() {
   const [modalOpen, setModalOpen] = useState(false)
 
   const downloadCV = () => {
-    const fileName = 'CV-EmmaGrave.pdf'
     const link = document.createElement('a')
-    link.href = `/cv/${fileName}`
-    link.download = fileName
+    link.href = '/cv/CV-EmmaGrave.pdf'
+    link.download = 'CV-EmmaGrave.pdf'
     link.click()
-    setModalOpen(false)
   }
 
   return (
