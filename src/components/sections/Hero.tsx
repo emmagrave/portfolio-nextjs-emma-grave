@@ -5,11 +5,6 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden px-8">
-      {/* Blobs animés */}
-      <div className="absolute w-[560px] h-[560px] -top-[180px] -left-[180px] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] bg-gradient-to-br from-primary to-accent opacity-[0.13] blur-[45px] pointer-events-none animate-morph" />
-      <div className="absolute w-[480px] h-[480px] -bottom-[130px] -right-[130px] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] bg-gradient-to-br from-primary to-accent opacity-[0.13] blur-[45px] pointer-events-none animate-morph [animation-delay:7s]" />
-      <div className="absolute w-[380px] h-[380px] top-[45%] right-[18%] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] bg-gradient-to-br from-primary to-accent opacity-[0.13] blur-[45px] pointer-events-none animate-morph [animation-delay:14s]" />
-
       {/* Social Sidebar Desktop */}
       <div className="hidden md:flex fixed left-6 top-1/2 -translate-y-1/2 flex-col gap-7 z-[100]">
         {[
