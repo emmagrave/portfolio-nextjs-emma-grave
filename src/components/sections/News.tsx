@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { newsData } from '@/data/portfolioData'
 
 export default function News() {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 })
 
   return (
     <section
