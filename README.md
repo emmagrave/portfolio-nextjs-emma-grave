@@ -25,7 +25,6 @@ portfolio-nextjs/
 │   │   └── sections/           # Composants sections
 │   │       ├── Hero.tsx
 │   │       ├── About.tsx
-│   │       ├── News.tsx
 │   │       ├── Skills.tsx
 │   │       ├── Alternance.tsx
 │   │       ├── Projects.tsx
@@ -85,11 +84,6 @@ npm start
 - Présentation personnelle
 - Liens sociaux (LinkedIn, GitHub, Email)
 - Image de profil
-
-#### Actualités
-- Timeline verticale centrée
-- Cards animées au scroll
-- Organisées par année universitaire
 
 #### Compétences
 - 5 catégories de compétences
@@ -187,27 +181,6 @@ npm run lint     # Linter ESLint
 }
 ```
 
-*(Note: react-intersection-observer à ajouter dans package.json si non présent)*
-
-## 🚢 Déploiement
-
-### Vercel (recommandé)
-```bash
-# Installer Vercel CLI
-npm i -g vercel
-
-# Déployer
-vercel
-```
-
-### Netlify
-```bash
-# Build
-npm run build
-
-# Déployer le dossier .next
-```
-
 ## 📝 Notes pour le rendu
 
 ### Points forts du projet Next.js :
@@ -234,4 +207,4 @@ npm run build
 
 **Auteur** : Emma Grave  
 **Date** : Février 2025  
-**Cadre** : Projet Next.js pour le cours de développement web
+**Cadre** : Projet Next.js

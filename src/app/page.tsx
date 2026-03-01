@@ -1,7 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
-import News from '@/components/sections/News'
 import Skills from '@/components/sections/Skills'
 import Alternance from '@/components/sections/Alternance'
 import Projects from '@/components/sections/Projects'
@@ -15,7 +14,6 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <News />
         <Skills />
         <Alternance />
         <Projects />
