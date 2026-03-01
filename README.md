@@ -89,7 +89,6 @@ npm start
 - 5 catégories de compétences
 - Barres de progression animées
 - Effet shimmer sur les barres
-- Modal pour télécharger le CV (FR/EN)
 
 #### Alternance
 - Timeline des phases de l'alternance

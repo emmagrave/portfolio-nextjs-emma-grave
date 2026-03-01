@@ -17,7 +17,6 @@ export default function Navigation() {
 
   const menuItems = [
     { href: '#about', label: 'À propos' },
-    { href: '#news', label: 'Actualités' },
     { href: '#skills', label: 'Compétences' },
     { href: '#alternance', label: 'Alternance' },
     { href: '#projects', label: 'Projets' },
