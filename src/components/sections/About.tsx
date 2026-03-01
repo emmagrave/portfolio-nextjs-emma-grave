@@ -86,7 +86,7 @@ export default function About() {
         {/* Image placeholder */}
         <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center">
           <Image
-              src="images/me.jpg"
+              src="images/me.webp"
               alt="Emma Grave"
               width={500}
               height={625}

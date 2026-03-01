@@ -93,7 +93,7 @@ export const projectsData: Project[] = [
       "Site de location de voiture effectué lors de mon année de BUT2",
     technologies: ['PHP', 'TypeScript', 'HTML', 'SCSS'],
     link: 'https://github.com/emmagrave/driveby',
-    imagePlaceholder: 'driveBy1.png',
+    imagePlaceholder: 'driveBy1.webp',
   },
   {
     title: 'Bot Vinted',
@@ -102,7 +102,7 @@ export const projectsData: Project[] = [
       "Bot Python qui gère mon compte Vinted (likes, annonces, suivi en base de données).",
     technologies: ['Python', 'SQLite'],
     link: 'https://github.com/emmagrave/botVinted/',
-    imagePlaceholder: 'vinted.png',
+    imagePlaceholder: 'vinted.webp',
   },
   {
     title: '2048',
@@ -110,7 +110,7 @@ export const projectsData: Project[] = [
       "Ce jeu de puzzle est basé sur le jeu populaire où l'objectif est de combiner des tuiles jusqu'à atteindre le nombre 2048.",
     technologies: ['Java'],
     link: 'https://github.com/emmagrave/2048',
-    imagePlaceholder: '2048.jpg',
+    imagePlaceholder: '2048.webp',
   },
 ]
 
