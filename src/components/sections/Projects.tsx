@@ -58,7 +58,7 @@ export default function Projects() {
                   style={{ background: project.imagePlaceholder }}
                 >
                   <Image
-                      src={`/images/${project.imagePlaceholder}`}
+                      src={`images/${project.imagePlaceholder}`}
                       alt={project.title}
                       fill
                       className="object-cover !relative"

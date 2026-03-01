@@ -42,7 +42,7 @@ export default function Skills() {
         <div className="w-full max-w-sm mx-auto mb-8 rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300">
           <div className="aspect-[4/5.5] bg-white flex items-center justify-center">
             <Image
-                src="/images/cv.png"
+                src="images/cv.png"
                 alt="Aperçu CV"
                 width={400}
                 height={550}
