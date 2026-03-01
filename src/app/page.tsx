@@ -5,7 +5,6 @@ import Skills from '@/components/sections/Skills'
 import Alternance from '@/components/sections/Alternance'
 import Projects from '@/components/sections/Projects'
 import Contact from '@/components/sections/Contact'
-import CVModal from '@/components/CVModal'
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <CVModal />
     </>
   )
 }
